@@ -1,0 +1,104 @@
+@font-face {
+  font-family: iransans;
+  src: url(IRANSansWeb.woff2);
+}
+
+body {
+  font-family: iransans;
+  margin: 0;
+  padding: 0;
+  background-color: #d7e0e7;
+}
+h2,
+h1 {
+  color: #fff;
+}
+h2 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.container {
+  display: grid;
+  place-items: center;
+  background-color: #3e5669;
+  box-shadow: 19px 13px 60px -31px rgba(0, 0, 0, 0.75);
+  width: 30vw;
+  height: 100vh;
+  margin: 0 950px;
+  position: relative;
+  padding-bottom: 40px;
+  border-left: 10px solid #2856b8;
+  border-right: 10px solid #2856b8;
+}
+select {
+  background-color: #2856b8;
+  color: white;
+  padding: 12px;
+  width: 350px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  transition: all 500ms;
+  text-transform: capitalize;
+}
+select:hover {
+  transition: all 500ms;
+  background-color: #1f2b35;
+}
+.selection h2{
+  font-size: 12px;
+}
+.op1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.radio-opton h2 {
+  text-align: right;
+}
+.radio-opton > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+.yaer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.result h2 {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+button {
+  background-color: #2856b8;
+  color: #fff;
+  cursor: pointer;
+  width: 350px;
+  height: 50px;
+  border: none;
+  transition: all 500ms ease;
+}
+button:hover {
+  background-color: #1f2b35;
+  color: #fff;
+}
+h1 {
+  text-align: right;
+}
+.background-img {
+  position: absolute;
+  right: 120%;
+}
+.background-img img {
+  width: 40vw;
+  margin-right: 90px;
+  margin-bottom: 190px;
+}
