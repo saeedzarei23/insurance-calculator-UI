@@ -10,19 +10,19 @@
   </head>
   <body>
     <div class="container">
-      <form action="#">
+      <form id="clac" action="#">
         <div class="hedline"><h1>محاسبه انلاین قیمت ماشین</h1></div>
         <div class="selection">
           <div class="yaer">
             <h2>مدل ماشین</h2>
             <select id="car">
               <option value="hide">-- مدل --</option>
-              <option value="BMW I8">BMW I8</option>
-              <option value="BMW Z4">BMW Z4</option>
-              <option value="porsche taycan">porsche taycan</option>
-              <option value="porsche cayenne">porsche cayenne</option>
-              <option value="benz sls">benz sls</option>
-              <option value="mclaren 720s">mclaren 720s</option>
+              <option value="BMW">BMW I8</option>
+              <option value="BMW">BMW Z4</option>
+              <option value="porsche">porsche taycan</option>
+              <option value="porsche">porsche cayenne</option>
+              <option value="benz ">benz sls</option>
+              <option value="benz">benz s500</option>
             </select>
           </div>
           <div class="yaer">
@@ -37,16 +37,27 @@
             <h2>نوع بیمه</h2>
           <div class="op1">
             <h2>ساده-شخص ثالث</h2>
-            <input type="radio" name="kaind" id="" />
+            <input type="radio" name="level" value="ساده" />
           </div>
           <div class="op1">
             <h2>کامل -شخص ثالث با بیمه بدنه</h2>
-            <input type="radio" name="kaind" id="" />
+            <input type="radio" name="level" value="کامل" />
           </div>
         </div>
-        <div class="result"><h2>خلاصه فاکتور</h2></div>
+        <div id="kholase" class="result">
+          <h2>خلاصه فاکتور</h2>
+          <div class="lode">
+            <img src="Eclipse-0.4s-210px (1).gif" alt="">
+          </div>
+          <div class="" id="information">
+            <!-- <p id="carname">مدل ماشین:bmw</p>
+            <p id="year">سال ساخت:2020</p>
+            <p id="kind">نوع بیمه:ساده</p>
+            <p id="final-price"> قیمت نهایی:700$</p> -->
+          </div>
+        </div>
         <button type="submit"><h2>محاسبه قیمت</h2></button>
-
+        
       </form>
       <div class="background-img">
         <img src="undraw_by_my_car_ttge (2).svg" alt="">

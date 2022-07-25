@@ -2,6 +2,13 @@
   font-family: iransans;
   src: url(IRANSansWeb.woff2);
 }
+:root{
+  --textColor:#fff;
+  --backgroundColor:#d7e0e7;
+  --conatinerBackground:#3e5669;
+  --btn-box:#2856b8;
+  --hover:#1f2b35;
+}
 
 body {
   font-family: iransans;
@@ -11,8 +18,9 @@ body {
 }
 h2,
 h1 {
-  color: #fff;
+  color: var(--textColor);
 }
+
 h2 {
   font-size: 17px;
   font-weight: 400;
@@ -20,18 +28,18 @@ h2 {
 .container {
   display: grid;
   place-items: center;
-  background-color: #3e5669;
+  background-color: var(--conatinerBackground);
   box-shadow: 19px 13px 60px -31px rgba(0, 0, 0, 0.75);
   width: 30vw;
   height: 100vh;
   margin: 0 950px;
   position: relative;
   padding-bottom: 40px;
-  border-left: 10px solid #2856b8;
-  border-right: 10px solid #2856b8;
+  border-left: 10px solid var(--btn-box);
+  border-right: 10px solid var(--btn-box);
 }
 select {
-  background-color: #2856b8;
+  background-color: var(--btn-box);
   color: white;
   padding: 12px;
   width: 350px;
@@ -46,7 +54,7 @@ select {
 }
 select:hover {
   transition: all 500ms;
-  background-color: #1f2b35;
+  background-color: var(--hover);
 }
 .selection h2{
   font-size: 12px;
@@ -78,7 +86,7 @@ select:hover {
   padding: 8px 0;
 }
 button {
-  background-color: #2856b8;
+  background-color: var(--btn-box);
   color: #fff;
   cursor: pointer;
   width: 350px;
@@ -87,8 +95,8 @@ button {
   transition: all 500ms ease;
 }
 button:hover {
-  background-color: #1f2b35;
-  color: #fff;
+  background-color: var(--hover);
+  color: var(--textColor);
 }
 h1 {
   text-align: right;
@@ -101,4 +109,30 @@ h1 {
   width: 40vw;
   margin-right: 90px;
   margin-bottom: 190px;
+}
+
+#information{
+  display: grid;
+  grid-template-columns: repeat(2 ,2fr);
+  place-items: center;
+  margin-bottom: 10px;
+  
+}
+#information p{
+  color: var(--textColor);
+}
+.show{
+  position: relative;
+  border: 5px solid var(--btn-box);
+  width: 133%;
+  right: 63px;
+}
+.lode{
+  display: grid;
+  place-items: center;
+  
+}
+.lode img{
+  width: 90px;
+  display: none;
 }
