@@ -63,15 +63,18 @@ select:hover {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  font-size: 13px;
+  
+}
+.op1  h2{
+  font-size: 15px;
 }
 
 .radio-opton h2 {
   text-align: right;
 }
 .radio-opton > h2 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 800;
   padding: 8px 0;
 }
 .yaer {
@@ -82,7 +85,7 @@ select:hover {
 .result h2 {
   text-align: right;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 8px 0;
 }
 button {
@@ -126,6 +129,10 @@ h1 {
   border: 5px solid var(--btn-box);
   width: 133%;
   right: 63px;
+  background-color: var(--btn-box);
+  /* border-left: 10px solid var(--conatinerBackground); */
+  /* border-right: 10px solid var(--conatinerBackground) */
+  
 }
 .lode{
   display: grid;
@@ -133,6 +140,6 @@ h1 {
   
 }
 .lode img{
-  width: 90px;
+  width: 120px;
   display: none;
 }

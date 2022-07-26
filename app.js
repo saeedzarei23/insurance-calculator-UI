@@ -65,15 +65,20 @@ InsranceCheaker.prototype.clacprice = function (InsranceCheaker) {
   // this switch statmant change price base on
   //the type of the car
   switch (car) {
+    case "BMW i8":
     case "BMW":
       price = base * 1.2;
       break;
+    case "porsche taycan":
     case "porsche":
       price = base * 1.3;
       break;
+    case "benz s500":
     case "benz":
       price = base * 1.25;
       break;
+    default:
+      price = base;
   }
   // get the year of car
   const year = InsranceCheaker.year;
@@ -117,21 +122,19 @@ function showResult(price, clientInsurece) {
   const kholase = document.querySelector("#kholase");
   const resultBox = document.querySelector("#information");
   let car = clientInsurece.car;
-
-  resultBox.innerHTML = `
-  <p id="final-price"> قیمت نهایی : ${price}$</p>`;
+  let price1 = price;
   // we are selecting the looding img and seting the style to block
   const spinner = document.querySelector(".lode img");
   spinner.style.display = "block";
   // we are makeing settimeout function
   // that  show our result and removing the spinner
-  setTimeout(function () {
+  setTimeout( ()=> {
     spinner.style.display = "none";
     resultBox.classList.add("show");
     resultBox.innerHTML = `<p id="carname">مدل ماشین : ${car}</p>
   <p id="year">سال ساخت : ${clientInsurece.year}</p>
   <p id="kind">نوع بیمه : ${clientInsurece.kind}</p>
-  <p id="final-price"> قیمت نهایی : ${price}$</p>`;
+  <p id="final-price"> قیمت نهایی : ${'$'}${price1}</p>`;
     kholase.appendChild(resultBox);
   }, 3000);
 }
