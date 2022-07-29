@@ -3,6 +3,9 @@
 const yearOption = document.querySelector("#year"),
   // form that we made
   form = document.querySelector("#clac");
+  const kholase = document.querySelector("#kholase");
+const calcBtn= document.querySelector('#btn')
+const resultBox = document.querySelector("#information");
 
 // eventlistner
 document.addEventListener("DOMContentLoaded", dateMaker);
@@ -116,11 +119,10 @@ InsranceCheaker.prototype.clacKind = function (price, kind) {
   }
   return price;
 };
+
 // showing the result
 function showResult(price, clientInsurece) {
   // we are selecthing elemant that we need
-  const kholase = document.querySelector("#kholase");
-  const resultBox = document.querySelector("#information");
   let car = clientInsurece.car;
   let price1 = price;
   // we are selecting the looding img and seting the style to block
@@ -138,3 +140,9 @@ function showResult(price, clientInsurece) {
     kholase.appendChild(resultBox);
   }, 3000);
 }
+// this eventlisnet help us remove the result box when we already use the clac before hand
+calcBtn.addEventListener('click',()=>{
+  if(resultBox.innerHTML="")return
+  resultBox.classList.remove("show");
+  resultBox.reset() 
+})
