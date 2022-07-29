@@ -118,6 +118,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2 ,2fr);
   place-items: center;
+  overflow: hidden;
   margin-bottom: 10px;
   
 }
@@ -126,6 +127,7 @@ h1 {
 }
 .show{
   position: relative;
+  overflow: hidden;
   border: 5px solid var(--btn-box);
   width: 133%;
   right: 63px;
