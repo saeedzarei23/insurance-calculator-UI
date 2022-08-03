@@ -1,2 +1,3 @@
 # insurance-calculator-UI
-insurance calculator UI for class practis
+ https://saeedzarei23.github.io/insurance-calculator-UI/
+ 
